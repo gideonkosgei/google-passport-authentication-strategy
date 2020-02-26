@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <style>
+            body{
+                font-family: arial; 
+                margin: 0;
+            }
+            nav{
+                background: #ff5353; 
+                padding: 20px lOpx;
+            }
+            nav ul{
+                max-width: 960px; 
+                margin: 0 auto; 
+                padding: 0;
+            }
+            nav li{
+                list-style-type: none; 
+                display: inline-block; 
+                margin: 0 lOpx 0 0;
+            } 
+            nav{
+                background: #ff5353; 
+                padding: 20px lOpx;
+            }
+            nav ul{
+                max-width: 960px; 
+                margin: 0 auto; 
+                padding: 0;
+            }
+            nav li{
+                list-style-type: none; 
+                display: inline-block; 
+                margin: 0 lOpx 0 0;
+            }
+            nav a{
+                color: #fff; 
+                font-size: 18px;
+                background: rgba(255,255,255,0.2); 
+                text-decoration: none; 
+                padding: lOpx; 
+                display: block; 
+            }
+            main, header{
+                max-width: 960px; 
+                margin: 30px auto; 
+                padding: 0 lOpx; 
+                color: #333;
+            }
+        </style>
+
+    </head>
+        <body>
+            <nav>
+                <ul>
+                   
+                    <% if(user){%>
+                            <li> <a href='/auth/logout'>Logout</a></li>
+                       <% } else {%>
+                            <li> <a href='/auth/login'>Logon </a></li>
+                       <% } %>        
+                   
+                   
+                    <li> <a href='/'>Homepage </a></li>
+                    <li> <a href='/profile'>profile </a></li>
+                </ul>
+            </nav> 
+            <header>
+                <h1>Net Ninja OAuth Tut's </h1>
+                <h2>Home Page</h2>
+            </header>
+            <main>
+                <p> Probably the best OAuth tutorial on the planet:) </p>
+            </main>
+        </body>
+
+</html>
