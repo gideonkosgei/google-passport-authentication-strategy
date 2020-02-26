@@ -24,14 +24,7 @@ app.set('view engine','ejs');
 mongoose.connect(keys.mongodb.dbURI,{ useUnifiedTopology: true,useNewUrlParser: true },()=>{
     console.log('connected to mongodb');
 });
-/*
-const options = {
-    keepAlive: 1,
-    useUnifiedTopology: true,
-    useNewUrlParser: true,
-  };
-  mongoose.connect(dbUrl, options).then(() => console.log('DB connected'));
-*/
+
 //sett up routes
 app.use('/auth',authRoutes);
 app.use('/profile',profileRoutes);
